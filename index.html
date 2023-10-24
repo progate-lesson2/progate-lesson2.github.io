@@ -1,225 +1,90 @@
 <!DOCTYPE html>
-<html lang="ja">
-
-<head>
+<html>
+<頭>
   <meta charset="utf-8">
-  <title>Boulangerie Licht</title>
-  <meta name="description" content="素材にこだわったBakaryShop">
-  <!--    ここからCSSの読み込み-->
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/d4b4ce2fa8.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width、initial-scale=1.0">
+  <title>プロゲート</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"crossorigin="匿名">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-
-<body>
-  <!--ここからヘッダー-->
-  <!--    これはtopに戻るためのid指定です-->
-  <header id="top">
-    <div class="header_inner">
-      <h1><a href="index.html"><img src="images/Logo1.jpg" alt="BoulangerieLichtlogo"></a></h1>
-      <div class="header_info">
-        <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-        <a href="#"><i class="fa-solid fa-store"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <!-- <p>必要あればここに店舗、サービス情報が入ります。</p><p>不要であれば削除</p> -->
+<本文>
+  <ヘッダー>
+    <div class="コンテナ">
+      <div class="header-left">
+        <img class="ロゴ" src="https://prog-8.com/images/html/advanced/main_logo.png">
+      </div>
+      <span class="fa fa-bars menu-icon"></span>
+      <div class="header-right">
+        <a href="#">レッスン</a>
+        <a href="#">新規登録</a>
+        <a href="#" class="login">ログイン</a>
       </div>
     </div>
-  </header>
-  <!--ヘッダーここまで-->
-  <!--ここからナビゲーション-->
-  <nav class="gnav">
-    <ul>
-      <!--           href内は下層ページのファイル名を入力、なければ不要-->
-      <li><a href="index.html">Top</a></li>
-      <li><a href="">News</a></li>
-      <li><a href="">Item</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Shop</a></li>
-      <li><a href="">Online Shop</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <!--ナビゲーションここまで-->
-  <!--メインビジュアル-->
-  <div class="mv">
-    <p><img src="images/main1.jpg" alt="たくさんのパン"></p>
-    <p class="mv_copy"><img src="images/Logo2.png" alt="BoulangerieLichtlogo"></p>
+  </ヘッダ>
+  <div class="トップラッパー">
+    <div class="コンテナ">
+      <h1>コードを学びましょう。<br>創造性を学びましょう。</h1>
+      <p>Progate はオンラインプログラミング学習サービスです。<br>初心者でも簡単なスライドとレッスンで、ウェブサービスを作りながらプログラミングにも取り組んでみましょう。</p>
+      <div class="btn-wrapper">
+        <a href="#" class="btn Signup">新規登録はこちら</a>
+        <p>または</p>
+        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebook で登録</a>
+        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitter で登録</a>
+      </div>
+    </div>
   </div>
-  <!--メインビジュアルここまで-->
-
-  <section class="news">
-    <div class="inner">
-      <h2 class="ttl">News</h2>
-      <!-- ＜ここからニュース記事＞ -->
-      <ul class="news_list">
-        <li class="news_list_item">
-          <a href="">
-            <div class="news_list_date">
-              <time>2022.12.05</time>
-              <p class="news_item">お知らせ</p>
-            </div>
-            <p>サイトリニューアルしました。</p>
-            <span class="arrow"></span>
-          </a>
-        </li>
-        <li class="news_list_item">
-          <a href="">
-            <div class="news_list_date">
-              <time>2022.12.06</time>
-              <p class="news_item">お知らせ</p>
-            </div>
-            <p>クリスマス限定、シュトーレンがオンラインにてご購入いただけます。</p>
-            <span class="arrow"></span>
-          </a>
-        </li>
-      </ul>
+  <div class="レッスンラッパー">
+    <div class="コンテナ">
+      <div class="見出し">
+        <h2>どこから始めればよいかを学びましょう!</h2>
+      </div>
+      <div class="レッスン">
+        <div class="レッスン">
+          <div class="レッスンアイコン">
+            <img src="https://prog-8.com/images/html/advanced/html.png">
+            <p>HTML と CSS</p>
+          </div>
+          <p class="text-contents">ウェブページの作成に使用される言語です。HTML と CSS を信じることで、静的なページを作ることができます。</p>
+        </div>
+        <div class="レッスン">
+          <div class="レッスンアイコン">
+            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
+            <p>jQuery</p>
+          </div>
+          <p class="text-contents">素敵な動きを簡単に実現できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。 p>
+        </div>
+        <div class="レッスン">
+          <div class="レッスンアイコン">
+            <img src="https://prog-8.com/images/html/advanced/ruby.png">
+            <p>ルビー</p>
+          </div>
+          <p class="text-contents">オープンソースの動的なプログラミング言語で、シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。 </p>
+        </div>
+        <div class="レッスン">
+          <div class="レッスンアイコン">
+            <img src="https://prog-8.com/images/html/advanced/php.png">
+            <p>PHP</p>
+          </div>
+          <p class="text-contents">HTML だけではページの内容を変えることはできません。PHP は HTML にプログラムを埋め込み、それを可能にします。</p>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
-  </section>
-
-  <!--セクション01-->
-  <section class="sample_section">
-    <h2 class="ttl">Item</h2>
-    <div class="sample_wrap">
-      <!--1つ目のBOX-->
-      <div class="sample">
-        <img src="images/item-Paindemie.jpg" alt="食パンの写真">
-        <h3 class="sample_ttl">食パン</h3>
-        <!-- <p>ここにテキストが入ります。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
-      </div>
-      <!--2つ目の-BOX-->
-      <div class="sample">
-        <img src="images/item-croissant.jpg" alt="クロワッサンの写真">
-        <h3 class="sample_ttl">クロワッサン</h3>
-        <!-- <p>ここにテキストが入ります。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
-      </div>
-      <!--3つ目の箱-->
-      <div class="sample">
-        <img src="images/item-baguette.jpg" alt="フランスパン">
-        <h3 class="sample_ttl">フランスパン</h3>
-        <!-- <p>ここにテキストが入ります。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
-      </div>
-      <!--4つ目の箱-->
-      <div class="sample">
-        <img src="images/item-bagle.jpg" alt="ベーグルパン">
-        <h3 class="sample_ttl">ベーグルパン</h3>
-        <!-- <p>テキストテキストテキストテキストテキストテキスト</p> -->
-      </div>
-      <!-- 5つ目の箱 -->
-      <div class="sample">
-        <img src="images/item_focaccia.jpg" alt="フォカッチャ">
-        <h3 class="sample_ttl">フォカッチャ</h3>
-        <!-- <p>ここにテキストが入ります。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
-      </div>
-      <!--6つ目の箱-->
-      <div class="sample">
-        <img src="images/item-donuts.jpg" alt="ドーナッツ">
-        <h3 class="sample_ttl">ドーナッツ</h3>
-        <!-- <p>ここにテキストが入ります。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
-      </div>
-    </div>
-  </section>
-
-  <div class="sample_btn"><a href="">More</a></div>
-  <!--ここまでセクション01-->
-  <!--ここからセクション02-->
-
-  <!--ここまでセクション02-->
-  <section>
-    <h2 class="ttl">About</h2>
-    <div class="voice0_about">
-
-      <div class=voice0>
-        <img src="images/about-shopinside.jpg" alt="店内の様子" class="message_img">
-        <h3 class="voice_ttl">”毎日の食卓に彩りを”</h3>
-        <p>"Boulangerie Licht"は、</br>
-          ”たくさんの人が光のようにお店に笑顔で集まってくれるように”</br>
-          という意味をこめてつくったパン屋さんです。</br>
-          定番なものはもちろん、季節に合った様々なシーンに</br>
-          ご利用いただけるパンをお届けいたします。</br></P>
-      </div>
-
-      <div class="voice0">
-        <img src="images/concept-ingredients.jpg" alt="素材" class="message_img">
-        <h3 class="voice_ttl">”素材を大切に”</h3>
-        <p>素材にこだわり添加物など一切使用せず,</br>
-        <p>自然なものを厳選しておりますので,</br>
-        <p>小さなお子様もお召し上がりいただけます。</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="ttl">Instagram</h2>
-    <div class="sns">
-      <a href=""><i class="fa-brands fa-instagram fa-3x"></i></a>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="ttl">Online Shop</h2>
-    <div class="voice">
-      <img src="images/online.jpg" alt="ご自宅で出来立てを焼きたての美味しさを" class="message_img">
-      <h3>”ご自宅で出来立ての美味しさを”</h3>
-      <p>"Boulangerie Licht"の冷凍パンをご用意しております。</p>
-      <p>焼き立ての美味しさを閉じ込めた状態でお届けします。</p>
-    </div>
-  </section>
-
-  <section class="company">
-    <h2 class="ttl">Shop</h2>
-    <div class="voice2">
-      <img src="images/shopentrance2.jpg" alt="お店の様子" class="message_img">
-      <p>"Boulangerie Licht"</p>
-      <p>address 神戸市中央区北野町0-0-0</p>
-      <p>tel 07-000-0000</p>
-      <p>open 9：00〜16：00（なくなり次第終了）</p>
-      <p>close 火曜日</p>
-    </div>
-    <!--        テーブルは不要な方は削除-->
-    <!-- <table class="company">
-      <tr>
-        <th>会社名</th>
-        <td>FarmStock Co., Ltd.</td>
-      </tr>
-      <tr>
-        <th>代表</th>
-        <td>農園 果実</td>
-      </tr>
-      <tr>
-        <th>住所</th>
-        <td>神戸市中央区北野町0-0-0</td>
-      </tr>
-    </table> -->
-    <!--        ここまでテーブル-->
-    <!--       ここからGoogleMap-->
-    <div class="gmap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6560.907072248695!2d135.185394!3d34.693739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4867ac7ce6362b00!2z44Op44OD44K744Ob44O844Or!5e0!3m2!1sja!2sjp!4v1584776725892!5m2!1sja!2sjp"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-    <!--        ここまでGoogleMap-->
-  </section>
-  <!--ここまでセクション02-->
-  <!--ここからトップへのページ内リンクボタン-->
-  <div class="to_top">
-    <a href="#top">Topへ</a>
   </div>
-  <!--ここまでトップへ-->
-  <!--フッター-->
-  <footer>
-    <ul class="footer_nav">
-      <li><a href="index.html">Top</a></li>
-      <li><a href="">News</a></li>
-      <li><a href="">Item</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Shop</a></li>
-      <li><a href="">Online Shop</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <p class="footer_copy"><small>&copy; Boulangie richt</small></p>
-  </footer>
-  <!--フッターここまで-->
-
-
+  <div class="メッセージラッパー">
+    <div class="コンテナ">
+      <div class="見出し">
+        <h2>さぁ、あなたもProgateでプログラミングを見てみませんか?</h2>
+        <h3>コーディングを学び、クリエイティブになることを学びましょう!</h3>
+      </div>
+      <span class="btn message">当面開発する</span>
+    </div>
+  </div>
+  <フッター>
+    <div class="コンテナ">
+      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
+      <p>コーディングを学び、クリエイティブになることを学びましょう。</p>
+    </div>
+  </フッター>
 </body>
-
 </html>
