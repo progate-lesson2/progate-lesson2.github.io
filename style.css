@@ -1,102 +1,460 @@
 @charset "utf-8";
-/* CSS Document */
-
-/* 
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
-*/
-
-/*各要素の基本リセット*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;/*フォントサイズのリセット*/
-    vertical-align:baseline;/*行内のテキストや画像等の縦方向の揃え方を親要素のベースラインに揃える指定*/
-    background:transparent;/*要素の背景色を透明に指定*/
-}
+/*ここに使用したいGoogleFontsコードを張り付け*/
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,500&display=swap');
 
 body {
-    line-height:1;/*行の高さをフォントサイズと同じにして実質行の高さがリセットされる指定*/
+  /*    ベースの文字色を指定*/
+  color: #333;
+  /*    基本編となるフォントサイズの指定*/
+  font-size: 16px;
+  /*    汎用性のあるフォント一括指定*/
+  font-family: "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  /*    行間の基準を指定*/
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
 }
-
-
-/*html5で追加された要素をブロック要素に統一する*/
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-    display:block;
-}
-
-ul,ol {
-    list-style:none;/*liのマーカーを消す*/
-}
-
-/*a要素のリセット*/
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  transition: 0.3s;
 }
 
-a img {
-    border-style:none;/*リンクを指定した画像に枠線を表示しない設定*/
+a:hover {
+  opacity: 0.6;
 }
 
-
-/* ins要素とはコンテンツに後から追加した内容を表す要素。必要に合わせて色を変更する */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+.header_inner {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 1080px;
+  position: relative;
+  /* position: fixed; */
 }
 
-/* ins要素とはハイライトして目立たせたいテキストに使用する要素。必要に合わせて色を変更する */
-mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
+.header_info {
+  font-size: 21px;
+  position: fixed;
+  margin: auto 15px;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  /* position: relative; */
+  /* float: right; */
 }
 
-/* del要素とは後から削除された部分に使用する要素。 */
-del {
-    text-decoration: line-through;/*テキストに打ち消し線を付ける*/
+.fa-basket-shopping {
+  color: #ce9f70;
+  font-size: 25px;
+  margin: 0 5px;
 }
 
-
-table {
-    border-collapse:collapse;/*隣合うセルのボーダーを重ねて表示する*/
-    border-spacing:0;/*隣合うセルのボーダーとボーダーの間隔を指定する*/
+.fa-store {
+  color: #ce9f70;
+  font-size: 25px;
+  margin: 0 5px;
 }
 
-
-/*フォームの部品*/
-
-input, select {
-    vertical-align:middle;/*縦方向の揃え方を中央揃えに指定*/
+.fa-instagram {
+  color: #ce9f70;
+  font-size: 25px;
+  margin: 0 5px;
 }
 
-/*全ての要素に border-boxを適用する*/
-* {
-box-sizing: border-box;
+.gnav ul {
+  background-color: #ce9f70;
+  display: flex;
+  justify-content: center;
+  /* position: fixed;
+  top: 0;
+  z-index: 10; */
+}
+
+.gnav a {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.mv {
+  position: relative;
+}
+
+.mv_copy {
+  font-size: 45px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  text-align: center;
+  top: 250px;
+  right: 10px;
+}
+.mv_copy1 {
+  font-size: 45px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  text-align: center;
+}
+/*
+.mv {
+    background-image: url(http://placehold.jp/1440x500.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mv_copy {
+    color: #333;
+    font-size: 48px;
+    margin-right: 70px;
+}
+*/
+/* ＜お知らせ記事＞ */
+.news_list_item a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  display: flex;
+  padding-right: 30px;
+}
+.inner {
+  width: 80%;
+  margin: 0 auto;
+  padding: 65px 0 100px;
+}
+.inner ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.news_list {
+  margin: 0.5%;
+}
+.news_list_item {
+  padding: 25px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+.news_list_item:first-child {
+  border-top: 1px solid #E6E6E6;
+}
+.news_list_date {
+  font-size: 15px;
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+}
+.news_item {
+  background: #ce9f70;
+  border-radius: 14px;
+  width: 6em;
+  text-align: center;
+  margin-left: 20px;
+  color: #fff;
+}
+.arrow {
+  width: 25px;
+  height: 1px;
+  background: #ce9f70;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.arrow::after {
+  content: "";
+  display: flex;
+  width: 6px;
+  height: 1px;
+  background: #ce9f70;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+}
+@media screen and (max-width: 1080px) {
+  .news_list_item a {
+    display: block;
+  }
+}
+@media screen and (max-width: 769px) {
+  news_list_item a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow{
+    display: none;
+  }
+  .news_list_item a {
+    padding-right: 0;
+  }
+}
+
+}
+
+.section {
+  margin: 80px 0;
+}
+
+.ttl {
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 130px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.ttl::before,
+.ttl::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  display: block;
+  background-color: #ce9f70;
+}
+
+.ttl::before {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translateY(-50%);
+}
+.ttl::after {
+  position: absolute;
+  top: 50%;
+  right: 38%;
+  transform: translateY(-50%);
+}
+
+.sample_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 30px;
+  width: 1080px;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.sample_wrap img {
+   border-radius: 20px;
+}
+
+.sample {
+  width: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: auto;
+  text-align: center;
+}
+/*画像サイズが親ボックスより大きい場合に指定*/
+/* フォカッチャ同サイズに */
+/* .sample img {
+  width: 100%;
+} */
+/* .sample {
+  padding: 30px;
+  width: calc((100% - 30px * 2) / 3);
+  background-color: #fff;
+}
+
+@media not all and (min-width: 768px) {
+  .sample {
+    width: 100%;
+  } */
+}
+
+.sample_ttl {
+  font-size: 20px;
+  font-weight: 400;
+  width: 320px;
+}
+
+.sample_btn {
+  text-align: center;
+}
+
+.sample_btn a {
+  /*    ボタンの色は好みで変更*/
+  background-color: #ce9f70;
+  border-radius: 30px;
+  display: inline-block;
+  color: #fff;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+.sns {
+  text-align: center;
+  margin: 55px auto;
+}
+
+.voice h3 {
+  font-size: 20px;
+}
+
+.voice0 {
+  width: 400px;
+}
+
+.voice0_about {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 1080px;
+}
+
+.voice0 img {
+  display: flex;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.voice0 h3{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.voice0 p{
+  text-align: center;
+
+}
+.voice img {
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+
+.voice {
+  margin: 0 auto;
+  width: 1080px;
+  text-align: center;
+}
+
+.voice img {
+  text-align: center;
+  margin-right: 30px;
+  width: 560px;
+  height: 300px;
+}
+
+.voice p {
+
+}
+
+.voice h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.voice2 {
+  margin: 0 auto;
+  width: 1080px;
+  height: 200px;
+  text-align: center;
+  clear: both;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.voice2 img {
+  float: left;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+.voice2 p {
+  text-align: left;
+  padding-bottom: 4px;
+  margin: 10px 0;
+  line-height: 15px;
+}
+
+.gmap {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.gmap iframe {
+  border-radius: 20px;
+}
+
+.to_top {
+  margin: 0 auto;
+  text-align: right;
+  width: 980px;
+}
+
+.to_top a {
+  /*    topへのリンクボタンの色は好みで変更*/
+  background-color: #ce9f70;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #ce9f70;
+  padding-bottom: 30px;
+}
+
+.footer_nav {
+  padding: 30px;
+  text-align: center;
+}
+
+.footer_nav li {
+  display: inline-block;
+}
+
+.footer_nav a {
+  border-right: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.footer_nav li:first-child a {
+  border-left: 1px solid #fff;
+}
+
+.footer_copy {
+  text-align: center;
+  color: #fff;
+}
+
+/*contact.htmlのCSS*/
+.form {
+  text-align: center;
+}
+
+.subv {
+  background-image: url(http://placehold.jp/1400x200.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subv h1 {
+  color: #fff;
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 40px;
 }
